@@ -5,6 +5,7 @@ const app = express()
 const PORT = 3001;
 
 
+
 app.use(express.static(path.join(__dirname, "client")));
 /*linkeados en html como css o js o imagen ... */
 
