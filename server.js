@@ -6,11 +6,11 @@ const PORT = 3001;
 
 
 
-app.use(express.static(path.join(__dirname, "client")));
+app.use(express.static(path.join(__dirname, "")));
 /*linkeados en html como css o js o imagen ... */
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, "client/index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 })
 
 app.listen(PORT , function(){
